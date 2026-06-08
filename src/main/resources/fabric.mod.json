@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "lie",
+	"version": "${version}",
+	"name": "Life is Experience! (LiE)",
+	"description": "Yo why you still play with boring vanilla? With this mod will boost your experience of the gameplay!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPLv3-only",
+	"icon": "assets/lie/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.m1nj.lie.LiE"
+		],
+		"fabric-datagen": [
+			"org.m1nj.lie.LiEDataGenerator"
+		]
+	},
+	"mixins": [
+		"lie.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
